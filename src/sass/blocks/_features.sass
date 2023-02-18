@@ -1,0 +1,75 @@
+.features
+  padding-top: 97px
+  &-block
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &__item
+      width: 370px
+      height: 410px
+      background-color: #f7f7f7
+      position: relative
+      margin-right: 15px
+      box-sizing: border-box
+      padding-top: 23px
+      padding-left: 27px
+      &:last-child
+        margin-right: 0
+      img
+        position: absolute
+        bottom: 0
+        left: 0
+    &__text
+      padding: 0
+      margin: 0
+      font-size: 16px
+      line-height: 23px
+      &-special
+        display: block
+      strong
+        +bold  
+      &-1
+        max-width: 270px
+      &-2
+        max-width: 290px
+      &-3
+        max-width: 285px    
+
+@media (max-width: 1200px)
+  .features
+    &-block
+      &__item
+        margin-top: 40px
+@media (max-width: 991px)
+  .features
+    padding-top: 50px
+@media (max-width: 567px)
+  .features
+    padding-top: 30px
+    padding-bottom: 50px
+    &-block
+      &__item
+        width: 272px
+        height: 300px   
+        padding-top: 15px
+        padding-left: 19px
+        margin-right: 0
+        margin-top: 30px
+        &-2
+          width: 277px
+          height: 307px
+          padding-top: 20px
+          padding-left: 25px
+        &-3
+          width: 275px
+          height: 304px
+          padding-top: 20px
+      &__text
+        font-size: 12px
+        line-height: 17.05px
+        &-1
+          max-width: 200px
+        &-2
+          max-width: 220px
+        &-3
+          max-width: 215px  

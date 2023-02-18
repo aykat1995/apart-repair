@@ -1,0 +1,24 @@
+.notice
+  background-color: $main-color
+  padding-top: 88px
+  padding-bottom: 94px
+  &__text
+    text-align: center
+    font-size: 32px
+    line-height: 50px
+    color: #000
+    margin: 0
+    &-special
+      display: block
+
+@media (max-width: 567px)
+  .notice
+    padding-top: 67px
+    padding-bottom: 75px
+    &__text
+      font-size: 18px
+      line-height: 22px
+      max-width: 260px
+      margin: auto
+    &-special
+      display: inline  

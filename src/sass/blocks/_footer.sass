@@ -1,0 +1,122 @@
+.footer
+  position: relative
+  padding-bottom: 40px
+.map
+  width: 50%  
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+
+.contacts
+  color: #000
+  flex-basis: 50%
+  padding-top: 70px
+  padding-left: 212px
+  box-sizing: border-box
+  &-block
+  &-special
+    display: block
+    &-bold
+      +bold
+  &__title
+    +bold
+    font-size: 22px
+    line-height: 1.5
+    max-width: 340px
+    margin-bottom: 90px
+  &-block
+    display: flex
+    justify-content: flex-end  
+  &-list
+    padding: 0
+    list-style: none
+    &__icon
+      width: 20px
+      height: 20px
+      text-align: center
+      line-height: 20px
+      margin-right: 20px
+      margin-top: 5px
+    &__item
+      display: flex
+      align-items: flex-start  
+      margin-bottom: 30px
+    &__text
+      font-size: 16px
+      line-height: 26px  
+      max-width: 350px
+  &-tel
+    color: #000
+    text-decoration: none
+    +bold
+
+@media (max-width: 1200px)
+  .contacts
+    padding-top: 50px
+    padding-left: 160px
+
+@media (max-width: 991px)
+  .footer
+    display: flex
+    justify-content: flex-start
+    flex-direction: column-reverse
+    position: static
+    padding-bottom: 0
+  .map
+    position: static
+    width: 100%
+    
+  .contacts
+    color: #000
+    flex-basis: 100%
+    padding-top: 30px
+    padding-left: 0
+    margin: auto
+    padding-bottom: 30px
+    &__title
+      +bold
+      max-width: 600px
+      margin-bottom: 60px
+      text-align: center
+    &-block
+    &-list
+      margin-left: 30%
+      &__item
+        
+      &__icon
+        width: 20px
+        height: 20px
+        text-align: center
+        line-height: 20px
+        margin-right: 20px
+        margin-top: 5px
+      &__item
+        display: flex
+        align-items: flex-start  
+        margin-bottom: 20px
+
+@media (max-width: 567px)
+  .contacts
+    &-list
+      margin-left: 20%
+
+@media (max-width: 387px)
+  .contacts
+    padding-top: 45px
+    margin-left: 5px
+    padding-bottom: 30px
+    &__title
+      text-align: left
+      max-width: 260px
+      margin-bottom: 30px
+      font-size: 18px
+      line-height: 22px
+    &-block
+    &-list
+      margin-left: 0
+      &__item
+        margin-bottom: 30px
+      &__icon        
+        margin-right: 12px
+        margin-top: 5px

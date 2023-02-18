@@ -1,0 +1,153 @@
+.offer
+  padding-bottom: 90px
+  background: url(../img/offer/offer-img.jpg) center right no-repeat
+  background-size: cover
+  position: relative
+  &:before
+    content: ''
+    background-color: #fff
+    position: absolute 
+    width: 50%
+    height: 100%
+    top: 0
+    left: 0 
+  #offer-form
+    padding-top: 0  
+  &-block
+    width: 50%
+    position: relative
+  &-title
+    max-width: 360px
+    margin-bottom: 20px
+    text-align: left
+    font-size: 24px
+    line-height: 35px
+  &-subtitle
+    width: 250px
+    display: block  
+    margin-bottom: 30px 
+  &__input
+    margin-bottom: 30px
+    width: 186px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 495px 
+    padding-top: 27px
+    padding-bottom: 27px 
+    margin-bottom: 26px
+  &-call
+    width: 88%
+    display: flex
+    justify-content: space-between    
+    &__right
+      flex-basis: 43%
+      font-size: 15px
+      line-height: 24px 
+      
+    &__left
+      flex-basis: 57%
+      font-size: 15px
+      line-height: 24px 
+  &-tel
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+    +bold
+    color: $text-color
+    display: block   
+    text-decoration: none 
+ 
+
+@media (max-width: 1200px)
+  .offer
+    &__input
+      width: 300px
+      margin-bottom: 20px
+      box-sizing: border-box
+    &__button
+      width: 300px  
+      font-size: 13px
+      box-sizing: border-box
+    &-call   
+      &__right
+        font-size: 15px
+        line-height: 20px     
+        flex-basis: 50%    
+      &__left
+        font-size: 15px
+        line-height: 20px 
+        flex-basis: 50% 
+    &-tel
+      font-size: 15px
+      line-height: 20px
+
+@media (max-width: 991px)    
+  .offer
+    margin-left: 25%
+    background: none
+    &-block
+      width: 100%
+    &-call 
+      flex-direction: column  
+      margin-left: 5px
+      max-width: 300px
+      &__left
+        margin-bottom: 12px
+
+@media (max-width: 567px)
+  .offer
+    margin-left: 10%
+    padding-bottom: 55px
+    &-title
+      font-size: 18px
+      line-height: 22px
+      width: 260px
+    &-subtitle
+      font-size: 14px  
+      margin-bottom: 25px 
+    &__input
+      margin-bottom: 10px
+      width: 275px
+      box-sizing: border-box
+    &-call   
+      flex-direction: column  
+      margin-left: 5px  
+      max-width: 260px
+      &__left
+        margin-bottom: 12px
+        line-height: 22px 
+    &__button
+      width: 275px  
+      padding-bottom: 27px 
+      box-sizing: border-box
+
+@media (max-width: 387px)
+  .offer 
+    margin-left: 0
+    padding-top: 35px
+    &__subtitle
+      margin-bottom: 20px
+    &__input
+      margin-bottom: 10px
+      width: 275px
+      box-sizing: border-box
+    &__button
+      font-size: 14px
+      line-height: 18px 
+      padding: 20px 58px 18px 65px
+      width: 275px
+      margin-top: 5px
+      margin-bottom: 20px
+      box-sizing: border-box
+    &-call   
+      flex-direction: column  
+      margin-left: 5px
+      &__left
+        margin-bottom: 12px
+        line-height: 22px 
+      &__right
+        line-height: 22px   
+
+
+ 

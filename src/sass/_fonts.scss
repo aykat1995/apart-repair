@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot');
+  src: local('../fonts/MuseoSansCyrl/MuseoSansCyrl-300'),
+      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Museo Sans Bold';
+    src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot');
+    src: local('../fonts/MuseoSansCyrl/MuseoSansCyrl-700'),
+        url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin reg {
+  font-family: 'Museo Sans Light';
+  font-weight: 300
+}  
+
+@mixin bold {
+  font-family: 'Museo Sans Bold';
+  font-weight: 700
+}

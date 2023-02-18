@@ -1,0 +1,104 @@
+.hero
+  padding: 50px 0 46px
+  background-color: $grey-bg
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding: 0
+  &-text
+    flex-basis: 45%
+    padding-right: 100px
+    &__title
+      font-size: 41px
+      +bold
+      line-height: 55px
+      margin-top: 29px
+      margin-bottom: 35px
+    &__subtitle
+      font-size: 20px
+      +bold
+  &-list
+    margin-top: 69px
+    padding: 0
+    &__item
+      list-style: none
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
+    &__text
+      font-size: 14px
+      font-weight: 300
+      line-height: 24px 
+      width: 50% 
+    &__img
+      min-width: 38px
+      min-height: 38px
+      border: 2px solid $main-color
+      border-radius: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 28px    
+  &-img
+    flex-basis: 54%
+
+@media (max-width: 1200px)
+  .hero
+    padding: 40px 0
+    &-text
+      flex-basis: 55%
+      &__title   
+        line-height: 50px 
+        margin-top: 15px
+        margin-bottom: 10px
+        letter-spacing: -0.03em
+      &__subtitle
+        margin-left: 2px
+    &-list
+      margin-top: 28px
+      &__item
+        margin-bottom: 17px 
+    &-img
+      flex-basis: 45%       
+
+
+@media (max-width: 991px)
+  .hero
+    &-block
+      flex-direction: column  
+    &-list
+      margin-bottom: 44px   
+    &-text
+      padding-right: 10px   
+
+@media (max-width: 768px)
+  .hero
+    padding: 14px 0 40px
+    padding-left: 2px
+    &-text
+      margin-bottom: -9px
+      padding-right: 0
+      &__title
+        font-size: 24px   
+        margin-top: 25px
+        line-height: 28px
+        letter-spacing: 0.005em
+      &__subtitle
+        font-size: 16px
+        margin-left: 3px
+    &-list
+      margin-top: 28px
+      &__item
+        margin-bottom: 17px
+      &__text
+        font-size: 12px
+        font-weight: 300
+        line-height: 14px 
+        width: 90% 
+      &__img
+        margin-right: 16px  
+        border-radius: 100%   
+        

@@ -1,0 +1,103 @@
+// * 
+//   box-sizing: border-box
+body
+  font-family: 'Museo Sans Light'
+  +reg
+img
+  max-width: 100%
+.container 
+  width: 1180px
+  margin: 0 auto
+
+@media (max-width: 1200px)
+  .container
+    max-width: 1000px
+    width: 90%  
+
+@media (max-width: 991px)
+  .container
+    max-width: 560px    
+    width: 95% 
+  .section
+    padding-top: 60px
+    padding-bottom: 60px  
+
+@media (max-width: 567px)
+  .container
+    max-width: 550px    
+    width: 90%
+
+@media (max-width: 387px)
+  .container
+    max-width: 380px    
+    width: 87%               
+
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  padding: 19px 28px 17px 28px
+  cursor: pointer
+  outline: none
+  +bold
+  color: $text-color
+  transition: 0.2s
+  &:hover
+    background-color: lighten($main-color, 15%)
+    cursor: pointer
+
+.section
+  padding-top: 55px
+  padding-bottom: 100px   
+  &-title
+    font-size: 30px
+    line-height: 45px
+    +bold
+    text-align: center
+  &-subtitle
+    font-size: 16px  
+.input
+  border-radius: 10px
+  border: 1px solid $border-input
+  padding: 22px 26px 21px
+  font-size: 15px
+  outline: none
+  transition: 0.2
+  &:focus
+    border: 1px solid $main-color
+    box-shadow: 0 0 2px $main-color
+
+.arrow
+  width: 15px
+  height: 15px
+  border: 2px solid #333333
+  transform: rotate(45deg)
+  border-right: none
+  border-bottom: none
+  z-index: 7
+  position: fixed
+  left: 15px
+  top: 50%  
+  display: block  
+  cursor: pointer
+.arrows
+  &__left, &__right
+    cursor: pointer
+
+@media (max-width: 991px)
+  .arrow
+    display: none    
+
+.input-group   
+  position: relative
+  display: inline-block
+.invalid
+  border: 1px solid red
+#phone-error, #username-error, #email-error
+  font-size: 13px
+  color: red
+  border: none   
+  position: absolute
+  top: -14px
+  left: 10%
+    
